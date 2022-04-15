@@ -1,0 +1,99 @@
+@import '_colors.scss';
+@import '_mixins.scss';
+
+.form {
+  // padding-left: 1.25rem;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // width: 90vw;
+  // margin: 0 auto;
+
+  @include desktop {
+    // width: 90vw;
+    max-width: 26rem;
+    margin: 0;
+  }
+  .saveBtn {
+    width: unset;
+    padding: .5rem 1.5rem;
+    margin: 0;
+  }
+}
+
+.photoCtn {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.label {
+  position: relative;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 1.75rem;
+}
+
+.image, .photoIcon {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.image {
+  border-radius: 8px;
+}
+
+.camera {
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+  color: $white;
+}
+
+.photoText, .inputLabel, .input {
+  font-weight: 500;
+  font-size: .815rem;
+  line-height: 1.125rem;
+  letter-spacing: -0.035em;
+}
+
+.photoText {
+  color: $grey;
+}
+
+.inputLabel {
+  color: $inputLabel;
+  margin-bottom: .25rem;
+}
+
+.inputCtn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.5rem;
+
+}
+
+.input, .textarea {
+  padding: 0 1.125rem;
+  color: $lightGrey;
+  border: 1px solid $grey;
+  border-radius: 12px;
+
+  &::placeholder {
+    color: inherit;
+  }
+}
+
+  .input {
+    height: 3rem;
+  }
+
+  .textarea {
+    height: 5rem;
+    padding-top: 1.0625rem;
+  }
+
+
+

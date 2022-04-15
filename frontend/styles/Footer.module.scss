@@ -1,0 +1,20 @@
+@import '_colors.scss';
+@import '_mixins.scss';
+
+.footer {
+  font-size: .875rem;
+  line-height: 1.1875rem;
+  letter-spacing: -0.035em;
+  color: $grey;
+  display: flex;
+  width: 90vw;
+  max-width: 52.5rem;
+  justify-content: space-between;
+  margin: .75rem auto 3rem auto
+}
+
+.loginReg {
+  @include desktop {
+    width: 29.625rem !important;
+  }
+}

@@ -1,0 +1,9 @@
+@import '_mixins.scss';
+
+.loginReg {
+    align-self: flex-start;
+    margin: 1rem 0 2.125rem 5vw;
+    @include desktop {
+      margin-left: 0;
+   }
+}

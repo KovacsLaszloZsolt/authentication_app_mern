@@ -1,0 +1,76 @@
+@import '_colors.scss';
+@import '_mixins.scss';
+
+.registerCtn {
+  // padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include desktop {
+    width: 29.625rem;
+    border: 1px solid $lightGrey;
+    border-radius: 24px;
+    margin: 5rem auto 0 auto;
+    padding: 0 3.625rem;
+ }
+}
+
+.logoCtn {
+  align-self: flex-start;
+  margin: 1rem 0 0 5vw;
+  @include desktop {
+    margin: 1rem 0 0 0;
+ }
+}
+
+.textImp {
+  width: 90vw;
+  color: $darkGrey;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 .875rem 0;
+  line-height: 1.5rem;
+  letter-spacing: -0.035em;
+
+  @include desktop {
+    width: 22.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+.text {
+  width: 90vw;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.035em;
+  color: $grey;
+  margin: 0 0 2.125rem 0;
+
+  @include desktop {
+    width: 22.25rem;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+}
+
+.helperText {
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.1875rem;
+  color: $lightGrey;
+  letter-spacing: -0.035em;
+  margin: 2rem 0 1.375rem 0;
+  width: 90%;
+  text-align: center;
+
+  .btn {
+    color: $blue;
+    margin-left: .2rem;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,121 @@
+@import '_colors.scss';
+@import '_mixins.scss';
+
+.ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.035em;
+  margin-bottom: .5rem;
+}
+
+.titleHelpText {
+  font-weight: 300;
+font-size: .875rem;
+line-height: 1.1875rem;
+letter-spacing: -0.035em;
+}
+
+.wrapper {
+  @include desktop {
+    width: 90vw;
+    max-width: 52.5rem;
+    border: 1px solid $divider;
+    border-radius: 12px;
+    margin: 2.75rem auto 0 auto;
+  }
+}
+
+.profileCtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 0 5vw;
+  margin-top: 2.5rem;
+  @include desktop {
+    width: 90vw;
+    max-width: 52.5rem;
+    padding: 0 3rem;
+  }
+}
+
+.secTitleCtn {
+  width: 50%;
+}
+.secTitle {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.035em;
+}
+
+.secTitleHelpText {
+  font-weight: 500;
+  font-size: .815rem;
+  line-height: 1.125rem;
+  letter-spacing: -0.035em;
+  color: $grey;
+}
+
+.editBtn {
+  color: $grey;
+  border: 1px solid $grey;
+  border-radius: 12px;
+  padding: .5rem 2rem;
+  background-color: unset;
+}
+
+.detailCtn {
+  width: 100vw;
+  height: 5.5rem;
+  list-style: none;
+  padding: 0 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:not(&:last-of-type) {
+    border-bottom: 1px solid $divider;
+  }
+
+  @include desktop {
+    width: 90vw;
+    max-width: 52.5rem;
+    padding: 0 3rem;
+    justify-content: left;
+    &:first-of-type {
+      border-top: 1px solid $divider;
+      margin-top: 2.5rem;
+    }
+  }
+
+  .detailTitle {
+    font-weight: 500;
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.035em;
+    color: $lightGrey;
+
+    @include desktop {
+    width: 15rem;
+    }
+  }
+
+  .detail, .img {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.035em;
+    color: $darkGrey;
+  }
+
+  .img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 8px;
+  }
+}

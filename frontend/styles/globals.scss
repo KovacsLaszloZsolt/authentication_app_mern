@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap');
+@import '_colors.scss';
+@import '_mixins.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.modalOpen {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.submitBtn {
+  width: 90vw;
+  border: none;
+  background-color: $blue;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: $white;
+  text-align: center;
+  letter-spacing: -0.035em;
+  padding: .5rem 0;
+  border-radius: 8px;
+  margin-top: .5rem;
+
+  @include desktop {
+    width: 22.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.errorMsg {
+  color: $red;
+  margin: 0 0 1rem 1rem
+}
