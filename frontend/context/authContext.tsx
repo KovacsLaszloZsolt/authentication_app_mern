@@ -29,7 +29,6 @@ export const AuthContext = createContext<AuthContextType | null>(null);
 const AuthProvider = ({ children }: ElementProps): JSX.Element => {
   const [loginData, setLoginData] = useState<LoginData | null>(null);
   const [userDetails, setUserDetails] = useState<UserDetails | null>(null);
-  // const [isLocalChecked, setIsLocalChecked] = useState<boolean>(false);
 
   return (
     <AuthContext.Provider value={{ loginData, setLoginData, userDetails, setUserDetails }}>
